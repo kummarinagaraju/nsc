@@ -1,0 +1,1 @@
+mg.matrix = img.load()

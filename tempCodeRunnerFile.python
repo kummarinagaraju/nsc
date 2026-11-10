@@ -1,0 +1,14 @@
+key=input("enter the key: ").upper().replace("J","I")
+alpha="abcdefghijklmnoopqrstuvwxyz"
+matrix=""
+for ch in key:
+    if ch not in matrix and ch in aplha:
+        matrix+=ch
+for ch in alpha:
+    if ch not in matrix and ch in alpha:
+        matrix+=ch
+pf=[list(matrix[i:i+5])for i in range(0,25,5)]    
+print("playfair matrix")
+for row in pf:
+    print(row)
+
